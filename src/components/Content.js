@@ -15,7 +15,7 @@ const Content = ({ getCovidData, tab }) => {
     };
 
     fetchData();
-  }, []);
+  }, [getCovidData]);
 
   const renderContent = () => {
     if (tab === 'map') {

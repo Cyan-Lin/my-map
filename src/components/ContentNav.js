@@ -30,12 +30,12 @@ const ContentNav = ({ toggleContentTab }) => {
     <div className="content__nav">
       <ul ref={navListRef} className="nav__list">
         <li onClick={e => onClick(e, 'map')} className="nav__item">
-          <a href="" className="nav__link">
+          <a href="/#" className="nav__link">
             <i className="fas fa-cloud"></i>
           </a>
         </li>
         <li onClick={e => onClick(e, 'covid-chart')} className="nav__item">
-          <a href="" className="nav__link">
+          <a href="/#" className="nav__link">
             <i className="fas fa-virus"></i>
           </a>
         </li>

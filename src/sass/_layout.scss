@@ -158,6 +158,10 @@
   display: flex;
   justify-content: center;
   transform: translate(-50%, -115%);
+
+  @media only screen and (max-width: $bp-medium) {
+    transform: translate(-50%, -113%);
+  }
 }
 
 .loader {

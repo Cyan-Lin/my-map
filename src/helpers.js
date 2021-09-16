@@ -23,9 +23,3 @@ export const adjustLng = coords => {
 
   return { lat, lng };
 };
-
-export const timeout = s => {
-  return new Promise((_, reject) => {
-    setTimeout(() => true, s * 1000);
-  });
-};

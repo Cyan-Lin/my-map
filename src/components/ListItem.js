@@ -12,7 +12,7 @@ const ListItem = ({ data, hour }) => {
       <div className="list__weather-image-box">
         <img
           src={data.condition.icon}
-          alt="Weather image"
+          alt="Weather icon"
           className="list__weather-image"
         />
       </div>

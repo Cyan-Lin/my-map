@@ -13,7 +13,7 @@ const Card = ({ weatherData: { current, forecast } }) => {
             <div className="card__image-box">
               <img
                 src={current.condition.icon}
-                alt="Current weather image"
+                alt="Current weather icon"
                 className="card__current-image"
               />
             </div>
@@ -33,7 +33,7 @@ const Card = ({ weatherData: { current, forecast } }) => {
               </div>
               <img
                 src={forecast.forecastday[0].day.condition.icon}
-                alt="Today's weather image"
+                alt="Today's weather icon"
                 className="card__image-small"
               />
               <div className="card__chance-of-rain">
@@ -56,7 +56,7 @@ const Card = ({ weatherData: { current, forecast } }) => {
               <div className="card__forecast-weather">
                 <img
                   src={forecast.forecastday[1].day.condition.icon}
-                  alt="Tomorrow weather image"
+                  alt="Tomorrow weather icon"
                   className="card__image-small"
                 />
                 <div className="card__chance-of-rain">
@@ -80,7 +80,7 @@ const Card = ({ weatherData: { current, forecast } }) => {
               <div className="card__forecast-weather">
                 <img
                   src={forecast.forecastday[2].day.condition.icon}
-                  alt="Tomorrow weather image"
+                  alt="Tomorrow weather icon"
                   className="card__image-small"
                 />
                 <div className="card__chance-of-rain">
