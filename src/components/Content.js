@@ -34,7 +34,7 @@ const Content = ({ getCovidData, tab, coords }) => {
     if (coords.lat === 0 && coords.lng === 0) {
       return (
         <p className="reminder">
-          Please turn on location service to get position.
+          Please turn on location service and refresh to get position.
         </p>
       );
     } else {
