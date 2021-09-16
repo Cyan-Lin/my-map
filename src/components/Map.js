@@ -73,7 +73,7 @@ const Map = ({
       <div className="map__container">
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+            key: 'AIzaSyDeimsmtRnIP5uocbKFABnNjIpMLFnZDDw',
             libraries: ['places', 'geometry', 'drawing'],
             version: 'weekly',
             id: 'google api',
