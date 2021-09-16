@@ -10,7 +10,7 @@ const Header = ({ changeCoordinate }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const loader = new Loader({
-    apiKey: 'AIzaSyDeimsmtRnIP5uocbKFABnNjIpMLFnZDDw',
+    apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     version: 'weekly',
     libraries: ['places', 'geometry', 'drawing'],
     id: 'google api',
