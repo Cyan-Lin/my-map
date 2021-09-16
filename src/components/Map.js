@@ -110,7 +110,6 @@ const Map = ({
               setClicked(false);
             }}
             onClick={e => changeCoordinate({ lat: e.lat, lng: e.lng })}
-            yesIWantToUseGoogleMapApiInternals
           >
             {/* 顯示天氣圖標 */}
             {renderContent()}
