@@ -1,0 +1,56 @@
+:root {
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+
+  --color-glass-dark-1: rgba(255, 255, 255, 0.5);
+  --color-glass-dark-2: rgba(255, 255, 255, 0.4);
+  --color-glass-dark-3: rgba(255, 255, 255, 0.2);
+  --color-glass-dark-4: rgba(255, 255, 255, 0.1);
+
+  --color-glass-pink: rgba(255, 0, 255, 0.5);
+
+  --color-light-blue: #00ffff;
+  --color-red: #ff3300;
+  --color-white: #fff;
+
+  --shadow-light: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  --shadow-neon-light-blue: 0 0 1.5rem #00ffff, 0 0 3rem #00ffff,
+    0 0 4.5rem #00ffff, 0 0 6rem #00ffff;
+  --shadow-neon-red: 0 0 1.5rem #ff3300, 0 0 3rem #ff3300, 0 0 4.5rem #ff3300,
+    0 0 6rem #ff3300;
+
+  --z-5: 5;
+  --z-10: 10;
+}
+
+$bp-large: 75em; // 1200px
+$bp-medium: 62.5em; // 1000px
+$bp-fold: 21.875em; // 350px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-1);
+  // min-height: 100vh;
+}
