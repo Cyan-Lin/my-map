@@ -29,8 +29,6 @@ const Header = ({ changeCoordinate }) => {
   };
 
   const onPlaceChanged = () => {
-    console.log(autocomplete.getBounds());
-
     if (autocomplete.getPlace().geometry) {
       const lat = autocomplete.getPlace().geometry.location.lat();
       const lng = autocomplete.getPlace().geometry.location.lng();
