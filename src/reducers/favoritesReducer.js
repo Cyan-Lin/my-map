@@ -5,7 +5,6 @@ export const favoritesReducer = (state = [], action) => {
     case ADD_FAVORITE:
       return [...state, action.payload];
     case DELETE_FAVORITE:
-      console.log('reducer delete');
       const newAllState = [...state].filter(
         favorite =>
           !(

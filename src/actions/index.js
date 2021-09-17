@@ -13,9 +13,11 @@ import {
 import { adjustLng } from '../helpers.js';
 
 export const changeCoordinate = coords => {
+  const newCoords = adjustLng(coords);
+
   return {
     type: CHANGE_COORDINATE,
-    payload: coords,
+    payload: newCoords,
   };
 };
 
@@ -41,7 +43,7 @@ export const getWeatherData = coords => async dispatch => {
 
     dispatch({ type: GET_WEATHER_DATA, payload: data });
   } catch (e) {
-    console.log(e);
+    // console.log(e);
     dispatch({ type: NOT_FOUND, payload: e });
   }
 };

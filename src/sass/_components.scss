@@ -225,8 +225,8 @@
         transition: all 0.3s;
 
         @media only screen and (max-width: $bp-medium) {
-          transform: skew(45deg) translateX(120rem);
-          transition: all 0.5s;
+          transform: skew(45deg) translateX(150rem);
+          transition: all 0.4s;
         }
       }
 
@@ -307,9 +307,8 @@
   }
 
   &__coords {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: 1px;
   }
 }
 

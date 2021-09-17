@@ -64,6 +64,7 @@ const List = ({
         lng: fixCoords.lng,
       });
     }
+    toggleTab('favorites');
   };
 
   return (

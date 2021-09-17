@@ -6,14 +6,14 @@ import { deleteFavorite, changeCoordinate } from '../actions';
 const FavoriteItem = ({ data, current, deleteFavorite, changeCoordinate }) => {
   // 點擊愛心:從favorites中移除
   const onHeartClick = e => {
+    e.preventDefault();
     e.stopPropagation();
     deleteFavorite(data);
   };
 
   const onClick = e => {
     e.stopPropagation();
-    console.log('click coords');
-    console.log(data);
+    // console.log(data);
     changeCoordinate(data);
   };
 
